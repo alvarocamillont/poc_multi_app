@@ -18,10 +18,13 @@ export class AppComponent {
     this.mainSession = sessionStorage.getItem('mainSession');
     this.eventoLocal = localStorage.getItem('eventoLocal');
     this.eventoSession = sessionStorage.getItem('eventoSession');
-    localStorage.setItem('contatoLocal', 'Mensagem do evento localstorage !!!');
+    localStorage.setItem(
+      'contatoLocal',
+      'Mensagem do contato localstorage !!!'
+    );
     sessionStorage.setItem(
       'contatoSession',
-      'Mensagem do evento Session Storage !!!'
+      'Mensagem do contato Session Storage !!!'
     );
   }
 }

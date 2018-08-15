@@ -3,12 +3,24 @@
   <h1>
     Bem vindo a {{ title }}!
   </h1>
-  <h2>Mensagem da MAIN - LOCALSTORAGE </h2>
-  <h3>{{mainLocal}}</h3>
-  <h2>Mensagem da MAIN - SESSIONSTORAGE </h2>
-  <h3>{{mainSession}}</h3>
-  <h2>Mensagem do evento - LOCALSTORAGE </h2>
-  <h3>{{eventoLocal}}</h3>
-  <h2>Mensagem do evento - SESSIONSTORAGE </h2>
-  <h3>{{eventoSession}}</h3>
+
+  <div *ngIf="mainLocal">
+    <h2>Mensagem da MAIN - LOCALSTORAGE </h2>
+    <h3>{{mainLocal}}</h3>
+  </div>
+
+  <div *ngIf="mainSession">
+    <h2>Mensagem da MAIN - SESSIONSTORAGE </h2>
+    <h3>{{mainSession}}</h3>
+  </div>
+
+  <div *ngIf="eventoLocal">
+    <h2>Mensagem do evento - LOCALSTORAGE </h2>
+    <h3>{{eventoLocal}}</h3>
+  </div>
+
+  <div *ngIf="eventoSession">
+    <h2>Mensagem do evento - SESSIONSTORAGE </h2>
+    <h3>{{eventoSession}}</h3>
+  </div>
 </div>
